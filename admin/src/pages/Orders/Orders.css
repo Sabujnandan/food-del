@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+.maxw{
+    max-width:241px
+}
+.order.add {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.order.add h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333333;
+  text-align: center;
+  font-weight: 600;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.order-item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.order-item-food {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.order-item-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.order-item-address p {
+  font-size: 14px;
+  color: #777777;
+  margin: 2px 0;
+}
+
+.order-item-phone {
+  font-size: 14px;
+  color: #777777;
+  margin-top: 10px;
+}
+
+.order-item-summary {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.order-item-summary p {
+  font-size: 16px;
+  color: #333333;
+  margin: 0 10px;
+}
+
+.order-item-summary select {
+  padding: 8px;
+  font-size: 14px;
+  color: #333333;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.order-item-summary-container {
+  display: flex;
+  align-items: center;
+}
+.select-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* appearance: none; */
+    cursor: pointer;
+}
+
+.select-container::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2);
+}
+
+
+/* @media (max-width: 1200px) {
+    .order.add {
+        max-width: 700px;
+        background-color: white;
+    }
+
+    .order-item {
+        padding: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        gap: 10px;
+    
+    }
+
+    .order-item img {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    .order-item-food, .order-item-name, .order-item-address p, .order-item-phone, .order-item-summary p {
+        font-size: 14px;
+    }
+
+    select {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+} */
+
+@media (max-width: 1200px) {
+    .order.add {
+        max-width: 500px;
+        padding: 15px;
+        background-color: white;
+    }
+
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-item img {
+        margin-bottom: 10px;
+    }
+
+    .order-item-details {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .order-item-summary {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .order-item-summary p {
+        margin: 0;
+    }
+
+    .select-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .order.add {
+        max-width: 100%;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .order-item {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .order-item img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .order-item-food, .order-item-name, .order-item-address p, .order-item-phone, .order-item-summary p {
+        font-size: 12px;
+    }
+
+    select {
+        padding: 10px;
+        font-size: 12px;
+    }
+}

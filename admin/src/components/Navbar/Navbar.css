@@ -1,0 +1,33 @@
+/* .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+.navbar .logo{
+    width: max(10% , 80px);
+}
+
+.navbar .profile{
+    width: 40px;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar .logo {
+    width: max(10%, 80px);
+}
+
+.navbar .profile {
+    width: 40px;
+    border-radius: 50%; /* Circular profile image */
+    border: 2px solid #fff; /* White border for distinction */
+}
