@@ -31,6 +31,7 @@
 .food-item-name-rating p{
 font-size: 20px;
 font-weight: 500;
+color: black;
 }
 .food-item-name-rating img{
     width: 70px;
